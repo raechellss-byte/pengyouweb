@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PENGYOU — Teman Pendamping Hidup di Taiwan</title>
+  <meta name="description" content="PENGYOU (朋友) adalah aplikasi satu pintu untuk mahasiswa, TKI, dan wisatawan Indonesia di Taiwan: kurs NTD, berita, makanan halal, terjemahan Mandarin, nomor darurat, dan pengingat dokumen.">
+  <meta property="og:title" content="PENGYOU — Teman Pendamping Hidup di Taiwan">
+  <meta property="og:description" content="Semua yang kamu butuhkan di Taiwan, dalam satu aplikasi.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#top" class="logo" aria-label="PENGYOU">
+      <span class="logo__mark">朋</span><span class="logo__text">PENGYOU</span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Menu utama">
+      <a href="#fitur" data-i18n="nav.features">Fitur</a>
+      <a href="#mengapa" data-i18n="nav.why">Mengapa PENGYOU</a>
+      <a href="#untuk-siapa" data-i18n="nav.who">Untuk Siapa</a>
+      <a href="#harga" data-i18n="nav.pricing">Harga</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="lang" id="langBtn" aria-label="Ganti bahasa">
+        <span data-lang="id" class="active">ID</span><span data-lang="en">EN</span>
+      </button>
+      <a href="#download" class="btn btn--primary btn--sm nav__cta" data-i18n="nav.download">Unduh</a>
+      <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <span class="eyebrow" data-i18n="hero.eyebrow">朋友 · artinya “teman”</span>
+      <h1 data-i18n="hero.title">Teman setiamu untuk hidup di Taiwan.</h1>
+      <p class="lead" data-i18n="hero.lead">Kurs NTD, berita terkini, makanan halal, terjemahan Mandarin, sampai pengingat paspor &amp; ARC — semua dalam satu aplikasi gratis.</p>
+      <div class="stores">
+        <a href="#download" class="store" id="btnAppStoreHero"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.800-.8-3-.8c-1.500 0-3 .9-3.800 2.300-1.600 2.800-.4 7 1.200 9.300.8 1.100 1.700 2.400 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7 2.000-1.100 2.800-2.200c.9-1.300 1.200-2.500 1.300-2.600-.1 0-2.500-1-2.500-3.900zM14.100 5.700c.6-.8 1.100-1.900.9-3-.9 0-2.100.6-2.700 1.400-.6.700-1.100 1.800-1 2.900 1.100.1 2.200-.5 2.800-1.300z"/></svg><span><small data-i18n="store.soon">Segera di</small><strong>App Store</strong></span></a>
+        <a href="#download" class="store" id="btnPlayStoreHero"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M3.600 2.500c-.2.200-.3.600-.3 1v17c0 .4.100.8.300 1l9.500-9.500L3.600 2.500zm10.200 10.200 2.700 2.700-11.600 6.600 8.900-9.300zm0-1.400L4.900 2l11.600 6.600-2.700 2.700zm3.800 2.100 2.700 1.500c.8.500.8 1.300 0 1.800l-2.700 1.500-3-3 3-1.800z"/></svg><span><small data-i18n="store.soon2">Segera di</small><strong>Google Play</strong></span></a>
+      </div>
+      <p class="hero__note"><a href="https://pengyouapp.netlify.app/#/beranda" target="_blank" rel="noopener" data-i18n="hero.web">Atau coba versi web sekarang →</a></p>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="blob blob--a"></div><div class="blob blob--b"></div>
+      <div class="phone phone--lg">
+        <div class="phone__notch"></div>
+        <div class="screen screen--home">
+          <div class="s-top"><div><small data-i18n="ph.hi">Selamat datang 👋</small><b>Pengyou</b></div><span class="s-avatar">朋</span></div>
+          <div class="s-card s-card--rate">
+            <small>NTD → IDR</small><strong>Rp 507,2</strong><em>▲ 0,4% hari ini</em>
+            <svg viewBox="0 0 120 30" class="spark"><polyline points="0,24 15,20 30,22 45,14 60,16 75,9 90,11 105,5 120,7" fill="none" stroke="#fff" stroke-width="2.500" stroke-linecap="round"/></svg>
+          </div>
+          <div class="s-grid">
+            <div class="s-tile t1"><i>🥘</i><span data-i18n="ph.halal">Halal</span></div>
+            <div class="s-tile t2"><i>🈶</i><span data-i18n="ph.translate">Terjemah</span></div>
+            <div class="s-tile t3"><i>🚨</i><span data-i18n="ph.sos">Darurat</span></div>
+            <div class="s-tile t4"><i>🪪</i><span data-i18n="ph.docs">Dokumen</span></div>
+          </div>
+          <div class="s-news"><small data-i18n="ph.news">Berita terkini</small><b data-i18n="ph.newsTitle">Aturan baru ARC untuk pekerja migran</b></div>
+        </div>
+      </div>
+      <div class="chip chip--1">🍜 <span data-i18n="chip.1">Halal terdekat: 350 m</span></div>
+      <div class="chip chip--2">朋友 <span data-i18n="chip.2">“Halo!” = 你好</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS BAND (ByteDance style) ============ -->
+<section class="band">
+  <div class="container band__inner">
+    <div><strong data-count="1">3 grup</strong><span data-i18n="band.1">Mahasiswa, TKI &amp; wisatawan</span></div>
+    <div><strong>1 app</strong><span data-i18n="band.2">Satu pintu informasi terorganisir</span></div>
+    <div><strong>ID ⇄ 中文</strong><span data-i18n="band.3">Terjemahan dua arah</span></div>
+    <div><strong>NT$0</strong><span data-i18n="band.4">Fitur inti gratis selamanya</span></div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="section problem">
+  <div class="container narrow center">
+    <h2 data-i18n="prob.title">Informasi Taiwan itu tersebar di mana-mana.</h2>
+    <p class="lead" data-i18n="prob.lead">Grup Facebook, TikTok, Instagram, Google Maps — kamu harus scroll berjam-jam, dan belum tentu benar. Scam kurs & agensi nakal pun mengintai.</p>
+  </div>
+  <div class="container problem__grid">
+    <article class="pcard"><span>😵</span><h3 data-i18n="prob.c1.t">Bingung cari info</h3><p data-i18n="prob.c1.p">Visa, beasiswa, transportasi, event — berserakan dan sering kedaluwarsa.</p></article>
+    <article class="pcard"><span>🗣️</span><h3 data-i18n="prob.c2.t">Kendala bahasa</h3><p data-i18n="prob.c2.p">Sulit berkomunikasi, dan penerjemah resmi itu mahal.</p></article>
+    <article class="pcard"><span>🛑</span><h3 data-i18n="prob.c3.t">Rawan tertipu</h3><p data-i18n="prob.c3.p">Kurs tidak wajar, agensi bermasalah, informasi hukum yang tidak jelas.</p></article>
+  </div>
+</section>
+
+<!-- ============ FEATURES (Duolingo alternating) ============ -->
+<section class="section" id="fitur">
+  <div class="container center narrow">
+    <span class="eyebrow" data-i18n="feat.eyebrow">Fitur utama</span>
+    <h2 data-i18n="feat.title">Semua yang kamu butuhkan, dalam satu aplikasi.</h2>
+  </div>
+
+  <!-- 1 Kurs & berita -->
+  <div class="container feature">
+    <div class="feature__copy">
+      <span class="tag tag--teal" data-i18n="f1.tag">Kurs &amp; Berita</span>
+      <h3 data-i18n="f1.title">Kurs NTD real-time & berita terkini</h3>
+      <p data-i18n="f1.p">Pantau kurs NTD ke Rupiah sebelum kirim uang pulang, dan baca berita penting seputar Taiwan yang sudah dirangkum untukmu.</p>
+      <ul class="ticks"><li data-i18n="f1.l1">Grafik pergerakan kurs</li><li data-i18n="f1.l2">Berita terkurasi, bukan sekadar viral</li><li data-i18n="f1.l3">Hindari scam kurs</li></ul>
+    </div>
+    <div class="feature__visual bg-teal">
+      <div class="phone"><div class="phone__notch"></div>
+        <div class="screen">
+          <div class="s-h">Kurs NTD</div>
+          <div class="s-big">1 NT$ = Rp 507</div>
+          <svg viewBox="0 0 200 80" class="chart"><defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14b8a6" stop-opacity=".45"/><stop offset="1" stop-color="#14b8a6" stop-opacity="0"/></linearGradient></defs><path d="M0,60 L25,52 L50,56 L75,38 L100,44 L125,28 L150,32 L175,16 L200,20 L200,80 L0,80Z" fill="url(#g1)"/><polyline points="0,60 25,52 50,56 75,38 100,44 125,28 150,32 175,16 200,20" fill="none" stroke="#0f766e" stroke-width="3" stroke-linecap="round"/></svg>
+          <div class="s-row"><i>📰</i><div><b data-i18n="ph.n1">Libur nasional Taiwan bulan ini</b><small>2 jam lalu</small></div></div>
+          <div class="s-row"><i>📰</i><div><b data-i18n="ph.n2">Info baru layanan imigrasi</b><small>5 jam lalu</small></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 Translator -->
+  <div class="container feature feature--rev">
+    <div class="feature__copy">
+      <span class="tag tag--amber" data-i18n="f2.tag">Terjemahan &amp; Pendamping</span>
+      <h3 data-i18n="f2.title">Indonesia ⇄ Mandarin, tanpa canggung</h3>
+      <p data-i18n="f2.p">Terjemahkan teks dan suara, temukan penerjemah terdekat, dan pesan pendampingan saat urusan penting seperti dokter, imigrasi, atau kantor.</p>
+      <ul class="ticks"><li data-i18n="f2.l1">Terjemahan teks &amp; suara</li><li data-i18n="f2.l2">Cari penerjemah terdekat</li><li data-i18n="f2.l3">Pesan pendampingan</li></ul>
+    </div>
+    <div class="feature__visual bg-amber">
+      <div class="phone"><div class="phone__notch"></div>
+        <div class="screen">
+          <div class="s-h">Translate</div>
+          <div class="bubble bubble--l">Saya mau ke rumah sakit</div>
+          <div class="bubble bubble--r zh">我想去醫院</div>
+          <div class="bubble bubble--l">Dimana halte terdekat?</div>
+          <div class="bubble bubble--r zh">最近的公車站在哪裡？</div>
+          <div class="mic">🎙️</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 Halal & tempat -->
+  <div class="container feature">
+    <div class="feature__copy">
+      <span class="tag tag--green" data-i18n="f3.tag">Halal &amp; Jelajah</span>
+      <h3 data-i18n="f3.title">Makanan halal & tempat seru di dekatmu</h3>
+      <p data-i18n="f3.p">Dari Taipei 101 sampai pasar malam Raohe — temukan makanan halal, restoran, penginapan, dan destinasi sesuai seleramu lewat peta.</p>
+      <ul class="ticks"><li data-i18n="f3.l1">Peta makanan halal</li><li data-i18n="f3.l2">Artikel tempat wisata</li><li data-i18n="f3.l3">Hotel &amp; tempat menginap</li></ul>
+    </div>
+    <div class="feature__visual bg-green">
+      <div class="phone"><div class="phone__notch"></div>
+        <div class="screen">
+          <div class="map"><i class="pin p1">📍</i><i class="pin p2">📍</i><i class="pin p3">📍</i><span class="me"></span></div>
+          <div class="s-row"><i>🥘</i><div><b>Halal Kitchen Taipei</b><small>350 m · ★ 4.7</small></div></div>
+          <div class="s-row"><i>🌙</i><div><b>Raohe Night Market</b><small>1,2 km · ★ 4.5</small></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 Dokumen -->
+  <div class="container feature feature--rev">
+    <div class="feature__copy">
+      <span class="tag tag--rose" data-i18n="f4.tag">Dokumen &amp; Checklist</span>
+      <h3 data-i18n="f4.title">Jangan sampai ARC & paspor kedaluwarsa</h3>
+      <p data-i18n="f4.p">Simpan tanggal penting dokumenmu dan dapatkan pengingat otomatis. Plus checklist saat tiba, selama tinggal, dan sebelum pulang.</p>
+      <ul class="ticks"><li data-i18n="f4.l1">Pengingat ARC, paspor, visa</li><li data-i18n="f4.l2">Checklist tiba &amp; pulang</li><li data-i18n="f4.l3">Nomor darurat sekali sentuh</li></ul>
+    </div>
+    <div class="feature__visual bg-rose">
+      <div class="phone"><div class="phone__notch"></div>
+        <div class="screen">
+          <div class="s-h" data-i18n="ph.docs">Dokumen</div>
+          <div class="doc"><b>ARC</b><small data-i18n="ph.exp1">Berlaku s/d 14 Mar 2027</small><div class="bar"><i style="width:72%"></i></div></div>
+          <div class="doc doc--warn"><b>Paspor</b><small data-i18n="ph.exp2">Perpanjang dalam 45 hari</small><div class="bar"><i style="width:18%"></i></div></div>
+          <div class="check"><span>✔</span><s data-i18n="ph.c1">Daftar kartu SIM</s></div>
+          <div class="check"><span>✔</span><s data-i18n="ph.c2">Buat rekening bank</s></div>
+          <div class="check"><span class="off"></span><em data-i18n="ph.c3">Isi data ARC</em></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 AI -->
+  <div class="container feature">
+    <div class="feature__copy">
+      <span class="tag tag--violet" data-i18n="f5.tag">PENGYOU Premium · AI</span>
+      <h3 data-i18n="f5.title">Ngobrol dengan AI-mu, si “Pengyou”</h3>
+      <p data-i18n="f5.p">Tanya apa saja ke teman AI berkepribadian ramah: rencanakan itinerary, cari tempat, dan dapatkan jawaban seputar Taiwan.</p>
+      <ul class="ticks"><li data-i18n="f5.l1">Chat AI berpersona teman</li><li data-i18n="f5.l2">AI itinerary planner</li><li data-i18n="f5.l3">Terjemahan real-time</li></ul>
+    </div>
+    <div class="feature__visual bg-violet">
+      <div class="phone"><div class="phone__notch"></div>
+        <div class="screen">
+          <div class="s-h">Chat Pengyou ✨</div>
+          <div class="bubble bubble--r bubble--me" data-i18n="ph.q">Buatkan itinerary 3 hari di Taipei, budget hemat!</div>
+          <div class="bubble bubble--l" data-i18n="ph.a">Siap! Hari 1: Taipei 101 &amp; Xinyi · Hari 2: Jiufen &amp; Shifen · Hari 3: Shilin Night Market 🍜</div>
+          <div class="typing"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY PENGYOU (Brilliant style) ============ -->
+<section class="section why" id="mengapa">
+  <div class="container center narrow">
+    <span class="eyebrow" data-i18n="why.eyebrow">Mengapa PENGYOU</span>
+    <h2 data-i18n="why.title">Kenapa harus PENGYOU?</h2>
+  </div>
+  <div class="container why__row">
+    <img class="why__img" src="gambar/mahasiswa-1200.jpg" alt="Mahasiswi Indonesia tersenyum percaya diri di koridor kampus Taiwan" loading="lazy" width="1200" height="671">
+    <div class="why__copy">
+      <h3 data-i18n="why.1.t">Selalu ada saat kamu butuh</h3>
+      <p data-i18n="why.1.p1">Tidak perlu lagi scroll grup Facebook, TikTok, dan Instagram berjam-jam untuk satu info. Kurs, berita, nomor darurat, hingga checklist kedatangan ada di satu aplikasi.</p>
+      <p data-i18n="why.1.p2">Dari hari pertama mendarat sampai hari kamu pulang, PENGYOU menemani — tanpa perlu menyewa penerjemah mahal.</p>
+    </div>
+  </div>
+  <div class="container why__row why__row--rev">
+    <img class="why__img" src="gambar/komunitas-1200.jpg" alt="Sekelompok teman Indonesia berdiskusi bersama di taman di Taiwan" loading="lazy" width="1200" height="671">
+    <div class="why__copy">
+      <h3 data-i18n="why.2.t">Dibuat oleh perantau, untuk perantau</h3>
+      <p data-i18n="why.2.p1">Informasi di PENGYOU terkurasi dan terorganisir, bukan sekadar konten viral. Kami fokus pada kebutuhan nyata mahasiswa, TKI, dan wisatawan Indonesia.</p>
+      <p data-i18n="why.2.p2">Mulai gratis, dan upgrade ke Premium hanya NT$50 per bulan jika butuh bantuan AI.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNTUK SIAPA (Coursera tabs) ============ -->
+<section class="section who" id="untuk-siapa">
+  <div class="container">
+   <div class="round-card">
+  <div class="center narrow">
+    <h2 data-i18n="who.title">PENGYOU untuk semua perantau di Taiwan.</h2>
+  </div>
+  <div>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="0" role="tab" data-i18n="who.t1">🎓 Mahasiswa</button>
+      <button class="tab" data-tab="1" role="tab" data-i18n="who.t2">💼 TKI / PMI</button>
+      <button class="tab" data-tab="2" role="tab" data-i18n="who.t3">🧳 Wisatawan</button>
+    </div>
+    <div class="panel active">
+      <div><h3 data-i18n="who.p1.t">Mulai kuliah tanpa panik</h3><p data-i18n="who.p1.p">Info beasiswa, visa, transportasi kampus, event mahasiswa Indonesia, dan checklist saat tiba.</p></div>
+      <ul class="ticks"><li data-i18n="who.p1.l1">Checklist kedatangan &amp; kuliah</li><li data-i18n="who.p1.l2">Beasiswa &amp; visa</li><li data-i18n="who.p1.l3">Komunitas &amp; event</li></ul>
+    </div>
+    <div class="panel">
+      <div><h3 data-i18n="who.p2.t">Bekerja dengan tenang</h3><p data-i18n="who.p2.p">Pengingat ARC, kurs aman untuk kirim uang, info hukum & hak kerja, serta pendamping bahasa.</p></div>
+      <ul class="ticks"><li data-i18n="who.p2.l1">Pengingat dokumen</li><li data-i18n="who.p2.l2">Kurs &amp; info hukum</li><li data-i18n="who.p2.l3">Penerjemah terdekat</li></ul>
+    </div>
+    <div class="panel">
+      <div><h3 data-i18n="who.p3.t">Liburan tanpa ribet</h3><p data-i18n="who.p3.p">Rekomendasi tempat, makanan halal, hotel, dan itinerary yang disusun cepat.</p></div>
+      <ul class="ticks"><li data-i18n="who.p3.l1">Destinasi &amp; peta</li><li data-i18n="who.p3.l2">Halal &amp; penginapan</li><li data-i18n="who.p3.l3">Nomor darurat</li></ul>
+    </div>
+  </div>
+   </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section" id="harga">
+  <div class="container">
+  <div class="round-card">
+  <div class="center narrow">
+    <span class="eyebrow" data-i18n="price.eyebrow">Harga</span>
+    <h2 data-i18n="price.title">Mulai gratis. Upgrade kalau butuh AI.</h2>
+  </div>
+  <div class="pricing">
+    <article class="plan">
+      <h3 data-i18n="price.free">Gratis</h3>
+      <div class="price">NT$0</div>
+      <ul class="ticks"><li data-i18n="price.f1">Semua fitur inti kecuali AI</li><li data-i18n="price.f2">Kurs, berita, halal, peta</li><li data-i18n="price.f3">Artikel terbatas</li></ul>
+      <a href="#download" class="btn btn--ghost" data-i18n="price.cta1">Mulai gratis</a>
+    </article>
+    <article class="plan plan--pro">
+      <span class="badge" data-i18n="price.pop">Paling lengkap</span>
+      <h3>Premium</h3>
+      <div class="price">NT$50 <small data-i18n="price.mo">/bulan (±Rp25 ribu)</small></div>
+      <ul class="ticks"><li data-i18n="price.p1">Semua fitur Gratis</li><li data-i18n="price.p2">Chat AI &amp; itinerary planner</li><li data-i18n="price.p3">Terjemahan suara real-time</li><li data-i18n="price.p4">Artikel tanpa batas</li></ul>
+      <a href="#download" class="btn btn--primary" data-i18n="price.cta2">Coba Premium</a>
+    </article>
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="review">
+  <div class="container center narrow">
+    <h2 data-i18n="rev.title">Disukai mahasiswa, pekerja, dan wisatawan di Taiwan</h2>
+  </div>
+  <div class="reviews__wrap">
+    <button class="rev-arrow rev-arrow--prev" id="revPrev" aria-label="Sebelumnya">‹</button>
+    <div class="reviews__track" id="reviewTrack" tabindex="0" aria-label="Ulasan pengguna"></div>
+    <button class="rev-arrow rev-arrow--next" id="revNext" aria-label="Berikutnya">›</button>
+  </div>
+  <div class="rev-dots" id="reviewDots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container narrow">
+    <h2 class="center" data-i18n="faq.title">Pertanyaan umum</h2>
+    <details><summary data-i18n="faq.q1">Apa arti PENGYOU?</summary><p data-i18n="faq.a1">PENGYOU (朋友) berarti “teman” dalam bahasa Mandarin — teman yang mendampingimu di Taiwan.</p></details>
+    <details><summary data-i18n="faq.q2">Apakah PENGYOU gratis?</summary><p data-i18n="faq.a2">Ya. Semua fitur inti gratis. Fitur AI tersedia lewat langganan Premium NT$50/bulan.</p></details>
+    <details><summary data-i18n="faq.q3">Kapan bisa diunduh di HP?</summary><p data-i18n="faq.a3">Aplikasi Android &amp; iOS sedang disiapkan. Sementara itu kamu bisa mencoba versi web.</p></details>
+    <details><summary data-i18n="faq.q4">Apakah informasinya terpercaya?</summary><p data-i18n="faq.a4">Kami fokus pada informasi terkurasi dan terorganisir, bukan sekadar konten viral.</p></details>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="download">
+  <img class="cta__bg" src="gambar/jiufen-1920.jpg" alt="Sekelompok teman Indonesia berjalan sambil menikmati jajanan di Jiufen, Taiwan" loading="lazy" width="1920" height="1078">
+  <div class="cta__shade"></div>
+  <div class="container cta__inner">
+    <div>
+      <h2 data-i18n="cta.title">Siap punya teman di Taiwan?</h2>
+      <p data-i18n="cta.p">Unduh PENGYOU segera setelah rilis. Sementara itu, coba versi web.</p>
+    </div>
+    <div class="stores stores--light">
+      <a href="#download" class="store store--light" id="btnAppStoreCta" aria-disabled="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9s-1.800-.8-3-.8c-1.500 0-3 .9-3.800 2.300-1.600 2.800-.4 7 1.200 9.300.8 1.100 1.700 2.400 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7 2.000-1.100 2.800-2.200c.9-1.300 1.200-2.500 1.300-2.600-.1 0-2.500-1-2.500-3.900zM14.100 5.700c.6-.8 1.100-1.900.9-3-.9 0-2.100.6-2.700 1.400-.6.700-1.100 1.800-1 2.900 1.100.1 2.200-.5 2.800-1.300z"/></svg><span><small data-i18n="store.soon">Segera di</small><strong>App Store</strong></span></a>
+      <a href="#download" class="store store--light" id="btnPlayStoreCta" aria-disabled="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M3.600 2.500c-.2.200-.3.600-.3 1v17c0 .4.100.8.300 1l9.500-9.500L3.600 2.500zm10.200 10.200 2.700 2.700-11.600 6.600 8.900-9.300zm0-1.400L4.900 2l11.600 6.600-2.700 2.700zm3.800 2.100 2.700 1.500c.8.500.8 1.300 0 1.800l-2.700 1.500-3-3 3-1.800z"/></svg><span><small data-i18n="store.soon2">Segera di</small><strong>Google Play</strong></span></a>
+      <a href="https://pengyouapp.netlify.app/#/beranda" target="_blank" rel="noopener" class="btn btn--white" data-i18n="cta.web">Buka versi web</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <a href="#top" class="logo logo--dark"><span class="logo__mark">朋</span><span class="logo__text">PENGYOU</span></a>
+      <p data-i18n="foot.tag">Teman pendamping hidup di Taiwan.</p>
+    </div>
+    <div class="footer__cols">
+      <div><h4 data-i18n="foot.c1">Produk</h4><a href="#fitur" data-i18n="nav.features">Fitur</a><a href="#harga" data-i18n="nav.pricing">Harga</a><a href="#faq">FAQ</a></div>
+      <div><h4 data-i18n="foot.c2">Coba</h4><a href="https://pengyouapp.netlify.app/#/beranda" target="_blank" rel="noopener" data-i18n="cta.web">Buka versi web</a><a href="#download" data-i18n="nav.download">Unduh</a></div>
+    </div>
+  </div>
+  <div class="container footer__bottom">© 2026 PENGYOU. <span data-i18n="foot.rights">Seluruh hak cipta dilindungi.</span></div>
+</footer>
+
+<!-- Sticky download bar (mobile) -->
+<div class="sticky" id="sticky"><a href="#download" class="btn btn--primary btn--block" data-i18n="sticky.cta">Unduh PENGYOU</a></div>
+
+<script src="script.js"></script>
+</body>
+</html>
